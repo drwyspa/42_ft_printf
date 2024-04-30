@@ -6,7 +6,7 @@
 /*   By: pjedrycz <p.jedryczkowski@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 21:51:26 by pjedrycz          #+#    #+#             */
-/*   Updated: 2024/04/29 22:39:43 by pjedrycz         ###   ########.fr       */
+/*   Updated: 2024/04/30 20:02:11 by pjedrycz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ int				ft_printf(const char *str, ...);
 size_t			ft_strlen(const char *str);
 void			ft_bzero(void *s, size_t n);
 void			*ft_calloc(size_t count, size_t size);
-static size_t	ft_len(unsigned long long n, char *base);
 char			*ft_util(unsigned long long n, char *base);
 
 // Formatting functions

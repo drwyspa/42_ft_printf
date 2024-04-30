@@ -6,7 +6,7 @@
 /*   By: pjedrycz <p.jedryczkowski@gmail.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 21:23:03 by pjedrycz          #+#    #+#             */
-/*   Updated: 2024/04/29 22:03:55 by pjedrycz         ###   ########.fr       */
+/*   Updated: 2024/04/30 19:02:45 by pjedrycz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
+// Count the string length
 size_t	ft_strlen(const char *str)
 {
 	size_t	i;
@@ -28,6 +29,7 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
+// Set n bytes to '0'
 void	ft_bzero(void *s, size_t n)
 {
 	char	*temp;
@@ -40,6 +42,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
+// Allocate memory
 void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*temp;
@@ -59,6 +62,7 @@ void	*ft_calloc(size_t count, size_t size)
 	return (temp);
 }
 
+// Check bas length
 static size_t	ft_len(unsigned long long n, char *base)
 {
 	size_t				len;
@@ -74,6 +78,7 @@ static size_t	ft_len(unsigned long long n, char *base)
 	return (len);
 }
 
+// Get my string ready
 char	*ft_util(unsigned long long n, char *base)
 {
 	char	*str;
